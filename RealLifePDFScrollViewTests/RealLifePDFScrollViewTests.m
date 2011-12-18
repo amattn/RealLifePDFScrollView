@@ -3,7 +3,7 @@
 //  RealLifePDFScrollViewTests
 //
 //  Created by Matt Nunogawa on 12/14/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Matt Nunogawa. All rights reserved.
 //
 
 #import "RealLifePDFScrollViewTests.h"

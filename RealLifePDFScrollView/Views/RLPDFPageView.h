@@ -6,7 +6,7 @@
  *  \brief <#BRIEF#>
  *  \details from https://github.com/amattn/RealLifeXcode4Templates
  *  \abstract <#ABSTRACT#> 
- *  \copyright Copyright __MyCompanyName__ 2011. All rights reserved.
+ *  \copyright Copyright Matt Nunogawa 2011. All rights reserved.
  */
 
 #import <UIKit/UIKit.h>
