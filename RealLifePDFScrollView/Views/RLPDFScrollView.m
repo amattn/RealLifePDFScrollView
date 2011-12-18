@@ -1,25 +1,25 @@
 /******************************************************************************
- *  \file RLScrollingPDFView.m
+ *  \file RLPDFScrollView.m
  *  \author Matt Nunogawa
  *  \date 12/14/11
- *  \class RLScrollingPDFView
+ *  \class RLPDFScrollView
  *  \brief <#BRIEF#>
  *  \details from https://github.com/amattn/RealLifeXcode4Templates
  *  \abstract <#ABSTRACT#>
  *  \copyright Copyright __MyCompanyName__ 2011. All rights reserved.
  */
 
-#import "RLScrollingPDFView.h"
+#import "RLPDFScrollView.h"
 #import "RLPDFPageView.h"
 
-@interface RLScrollingPDFView ()
+@interface RLPDFScrollView ()
 @property (nonatomic, assign) NSURL *internalPdfURL;
 @property (nonatomic, assign) CGPDFDocumentRef pdfDocumentRef;
 @property (nonatomic, strong) UIActivityIndicatorView *spinner;
 @property (nonatomic, strong) RLOnDemandScrollView *onDemandScrollView;
 @end
 
-@implementation RLScrollingPDFView
+@implementation RLPDFScrollView
 {
 	CGRect _lastKnownBounds;
 }
@@ -191,7 +191,7 @@
 	self.pdfDocumentRef = pdfDocRef;
 	CFRelease(pdfDocRef);
 
-	if ([RLScrollingPDFView hasErrorOpeningPDFDocument:self.pdfDocumentRef])
+	if ([RLPDFScrollView hasErrorOpeningPDFDocument:self.pdfDocumentRef])
 	{
 		self.pdfDocumentRef = nil;
 		return;

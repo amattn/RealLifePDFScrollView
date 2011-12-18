@@ -10,12 +10,12 @@
  */
 
 #import "RLPDFViewController.h"
-#import "RLScrollingPDFView.h"
+#import "RLPDFScrollView.h"
 #import "RLOnDemandScrollView.h"
 
 #pragma mark -
 @interface RLPDFViewController ()
-@property (nonatomic, strong) RLScrollingPDFView *scrollingPDFView;
+@property (nonatomic, strong) RLPDFScrollView *scrollingPDFView;
 @property (nonatomic, strong) RLOnDemandScrollView *onDemandScrollView;
 @end
 
@@ -75,7 +75,7 @@
 	self.view.autoresizesSubviews = YES;
 	self.view.backgroundColor = [UIColor darkGrayColor];
 
-	self.scrollingPDFView = [[RLScrollingPDFView alloc] initWithFrame:self.view.bounds];
+	self.scrollingPDFView = [[RLPDFScrollView alloc] initWithFrame:self.view.bounds];
 	self.scrollingPDFView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	self.scrollingPDFView.pdfURL = self.pdfURL;
 	[self.view addSubview:self.scrollingPDFView];

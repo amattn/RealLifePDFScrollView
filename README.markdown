@@ -2,7 +2,7 @@
 
 version 0.2
 
-Simple sample code to display pdfs.
+Simple sample code to display pdfs.  Currently built for iOS 5 w/ ARC.
 
 
 This ScrollView subclass shows how to display multi-page PDFs with support for:

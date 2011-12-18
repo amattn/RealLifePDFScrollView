@@ -21,8 +21,8 @@
 		2A9C75AD14991B7C006D858D /* RealLifePDFScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75AC14991B7C006D858D /* RealLifePDFScrollViewTests.m */; };
 		2A9C75B814991E50006D858D /* RLPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75B714991E50006D858D /* RLPDFViewController.m */; };
 		2A9C75BF14991ED4006D858D /* RLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75BE14991ED4006D858D /* RLMasterViewController.m */; };
-		2A9C75C9149922C8006D858D /* RLScrollingPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75C8149922C8006D858D /* RLScrollingPDFView.m */; };
-		2A9C75CA149922C8006D858D /* RLScrollingPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75C8149922C8006D858D /* RLScrollingPDFView.m */; };
+		2A9C75C9149922C8006D858D /* RLPDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75C8149922C8006D858D /* RLPDFScrollView.m */; };
+		2A9C75CA149922C8006D858D /* RLPDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75C8149922C8006D858D /* RLPDFScrollView.m */; };
 		2A9C75CD149922EF006D858D /* RLPDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75CC149922EF006D858D /* RLPDFPageView.m */; };
 		2A9C75CE149922EF006D858D /* RLPDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75CC149922EF006D858D /* RLPDFPageView.m */; };
 		2A9C75D01499230B006D858D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C75CF1499230B006D858D /* QuartzCore.framework */; };
@@ -73,8 +73,8 @@
 		2A9C75B714991E50006D858D /* RLPDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLPDFViewController.m; sourceTree = "<group>"; };
 		2A9C75BD14991ED4006D858D /* RLMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMasterViewController.h; sourceTree = "<group>"; };
 		2A9C75BE14991ED4006D858D /* RLMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMasterViewController.m; sourceTree = "<group>"; };
-		2A9C75C7149922C8006D858D /* RLScrollingPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLScrollingPDFView.h; sourceTree = "<group>"; };
-		2A9C75C8149922C8006D858D /* RLScrollingPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLScrollingPDFView.m; sourceTree = "<group>"; };
+		2A9C75C7149922C8006D858D /* RLPDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = RLPDFScrollView.h; sourceTree = "<group>"; };
+		2A9C75C8149922C8006D858D /* RLPDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLPDFScrollView.m; sourceTree = "<group>"; };
 		2A9C75CB149922EE006D858D /* RLPDFPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLPDFPageView.h; sourceTree = "<group>"; };
 		2A9C75CC149922EF006D858D /* RLPDFPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLPDFPageView.m; sourceTree = "<group>"; };
 		2A9C75CF1499230B006D858D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -197,8 +197,8 @@
 		2A9C75B914991E60006D858D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2A9C75C7149922C8006D858D /* RLScrollingPDFView.h */,
-				2A9C75C8149922C8006D858D /* RLScrollingPDFView.m */,
+				2A9C75C7149922C8006D858D /* RLPDFScrollView.h */,
+				2A9C75C8149922C8006D858D /* RLPDFScrollView.m */,
 				2A9C75CB149922EE006D858D /* RLPDFPageView.h */,
 				2A9C75CC149922EF006D858D /* RLPDFPageView.m */,
 				2A9C762C149D38E7006D858D /* RLOnDemandScrollView.h */,
@@ -338,7 +338,7 @@
 				2A9C758F14991B7C006D858D /* RLAppDelegate.m in Sources */,
 				2A9C75B814991E50006D858D /* RLPDFViewController.m in Sources */,
 				2A9C75BF14991ED4006D858D /* RLMasterViewController.m in Sources */,
-				2A9C75C9149922C8006D858D /* RLScrollingPDFView.m in Sources */,
+				2A9C75C9149922C8006D858D /* RLPDFScrollView.m in Sources */,
 				2A9C75CD149922EF006D858D /* RLPDFPageView.m in Sources */,
 				2A9C762E149D38E8006D858D /* RLOnDemandScrollView.m in Sources */,
 			);
@@ -349,7 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9C75AD14991B7C006D858D /* RealLifePDFScrollViewTests.m in Sources */,
-				2A9C75CA149922C8006D858D /* RLScrollingPDFView.m in Sources */,
+				2A9C75CA149922C8006D858D /* RLPDFScrollView.m in Sources */,
 				2A9C75CE149922EF006D858D /* RLPDFPageView.m in Sources */,
 				2A9C762F149D38E8006D858D /* RLOnDemandScrollView.m in Sources */,
 			);

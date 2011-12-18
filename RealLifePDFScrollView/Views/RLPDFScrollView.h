@@ -1,8 +1,8 @@
 /******************************************************************************
- *  \file RLScrollingPDFView.h
+ *  \file RLPDFScrollView.h
  *  \author Matt Nunogawa
  *  \date 12/14/11
- *  \class RLScrollingPDFView
+ *  \class RLPDFScrollView
  *  \brief <#BRIEF#>
  *  \details from https://github.com/amattn/RealLifeXcode4Templates
  *  \abstract <#ABSTRACT#> 
@@ -16,7 +16,7 @@
 
 #pragma mark ** Protocols & Declarations **
 
-@interface RLScrollingPDFView : UIScrollView <RLOnDemandScrollViewDataSource>
+@interface RLPDFScrollView : UIScrollView <RLOnDemandScrollViewDataSource>
 {
 
 }
