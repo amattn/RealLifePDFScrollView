@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A9C757F14991B7C006D858D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C757E14991B7C006D858D /* UIKit.framework */; };
+		2A9C758114991B7C006D858D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C758014991B7C006D858D /* Foundation.framework */; };
+		2A9C758314991B7C006D858D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C758214991B7C006D858D /* CoreGraphics.framework */; };
+		2A9C758914991B7C006D858D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C758714991B7C006D858D /* InfoPlist.strings */; };
+		2A9C758B14991B7C006D858D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C758A14991B7C006D858D /* main.m */; };
+		2A9C758F14991B7C006D858D /* RLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C758E14991B7C006D858D /* RLAppDelegate.m */; };
+		2A9C759214991B7C006D858D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C759014991B7C006D858D /* MainStoryboard.storyboard */; };
+		2A9C75A014991B7C006D858D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C759F14991B7C006D858D /* SenTestingKit.framework */; };
+		2A9C75A114991B7C006D858D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C757E14991B7C006D858D /* UIKit.framework */; };
+		2A9C75A214991B7C006D858D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C758014991B7C006D858D /* Foundation.framework */; };
+		2A9C75AA14991B7C006D858D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C75A814991B7C006D858D /* InfoPlist.strings */; };
+		2A9C75AD14991B7C006D858D /* RealLifePDFScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75AC14991B7C006D858D /* RealLifePDFScrollViewTests.m */; };
+		2A9C75B814991E50006D858D /* RLPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75B714991E50006D858D /* RLPDFViewController.m */; };
+		2A9C75BF14991ED4006D858D /* RLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75BE14991ED4006D858D /* RLMasterViewController.m */; };
+		2A9C75C9149922C8006D858D /* RLScrollingPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75C8149922C8006D858D /* RLScrollingPDFView.m */; };
+		2A9C75CA149922C8006D858D /* RLScrollingPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75C8149922C8006D858D /* RLScrollingPDFView.m */; };
+		2A9C75CD149922EF006D858D /* RLPDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75CC149922EF006D858D /* RLPDFPageView.m */; };
+		2A9C75CE149922EF006D858D /* RLPDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C75CC149922EF006D858D /* RLPDFPageView.m */; };
+		2A9C75D01499230B006D858D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C75CF1499230B006D858D /* QuartzCore.framework */; };
+		2A9C75D11499230B006D858D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C75CF1499230B006D858D /* QuartzCore.framework */; };
+		2A9C75D31499231F006D858D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C758214991B7C006D858D /* CoreGraphics.framework */; };
+		2A9C7601149D2CB3006D858D /* test_env_101p.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C7600149D2CB3006D858D /* test_env_101p.pdf */; };
+		2A9C7602149D2CB3006D858D /* test_env_101p.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C7600149D2CB3006D858D /* test_env_101p.pdf */; };
+		2A9C760A149D3228006D858D /* test_001p.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C7607149D3228006D858D /* test_001p.pdf */; };
+		2A9C760B149D3228006D858D /* test_001p.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C7607149D3228006D858D /* test_001p.pdf */; };
+		2A9C760C149D3228006D858D /* test_003p.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C7608149D3228006D858D /* test_003p.pdf */; };
+		2A9C760D149D3228006D858D /* test_003p.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C7608149D3228006D858D /* test_003p.pdf */; };
+		2A9C760E149D3228006D858D /* test_120p.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C7609149D3228006D858D /* test_120p.pdf */; };
+		2A9C760F149D3228006D858D /* test_120p.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C7609149D3228006D858D /* test_120p.pdf */; };
+		2A9C762E149D38E8006D858D /* RLOnDemandScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C762D149D38E7006D858D /* RLOnDemandScrollView.m */; };
+		2A9C762F149D38E8006D858D /* RLOnDemandScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C762D149D38E7006D858D /* RLOnDemandScrollView.m */; };
+		2AE63F2C149E54BB0007F55D /* test_venv_100p.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2AE63F2B149E54BB0007F55D /* test_venv_100p.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A9C75A314991B7C006D858D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A9C757114991B7C006D858D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A9C757914991B7C006D858D;
+			remoteInfo = RealLifePDFScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A9C757A14991B7C006D858D /* RealLifePDFScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealLifePDFScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9C757E14991B7C006D858D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2A9C758014991B7C006D858D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2A9C758214991B7C006D858D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A9C758614991B7C006D858D /* RealLifePDFScrollView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RealLifePDFScrollView-Info.plist"; sourceTree = "<group>"; };
+		2A9C758814991B7C006D858D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A9C758A14991B7C006D858D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A9C758C14991B7C006D858D /* RealLifePDFScrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealLifePDFScrollView-Prefix.pch"; sourceTree = "<group>"; };
+		2A9C758D14991B7C006D858D /* RLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLAppDelegate.h; sourceTree = "<group>"; };
+		2A9C758E14991B7C006D858D /* RLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLAppDelegate.m; sourceTree = "<group>"; };
+		2A9C759114991B7C006D858D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2A9C759E14991B7C006D858D /* RealLifePDFScrollViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealLifePDFScrollViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9C759F14991B7C006D858D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2A9C75A714991B7C006D858D /* RealLifePDFScrollViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RealLifePDFScrollViewTests-Info.plist"; sourceTree = "<group>"; };
+		2A9C75A914991B7C006D858D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A9C75AB14991B7C006D858D /* RealLifePDFScrollViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealLifePDFScrollViewTests.h; sourceTree = "<group>"; };
+		2A9C75AC14991B7C006D858D /* RealLifePDFScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealLifePDFScrollViewTests.m; sourceTree = "<group>"; };
+		2A9C75B614991E50006D858D /* RLPDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLPDFViewController.h; sourceTree = "<group>"; };
+		2A9C75B714991E50006D858D /* RLPDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLPDFViewController.m; sourceTree = "<group>"; };
+		2A9C75BD14991ED4006D858D /* RLMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMasterViewController.h; sourceTree = "<group>"; };
+		2A9C75BE14991ED4006D858D /* RLMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMasterViewController.m; sourceTree = "<group>"; };
+		2A9C75C7149922C8006D858D /* RLScrollingPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLScrollingPDFView.h; sourceTree = "<group>"; };
+		2A9C75C8149922C8006D858D /* RLScrollingPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLScrollingPDFView.m; sourceTree = "<group>"; };
+		2A9C75CB149922EE006D858D /* RLPDFPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLPDFPageView.h; sourceTree = "<group>"; };
+		2A9C75CC149922EF006D858D /* RLPDFPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLPDFPageView.m; sourceTree = "<group>"; };
+		2A9C75CF1499230B006D858D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2A9C75FE149C0B7C006D858D /* RLGlobalUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLGlobalUtilities.h; sourceTree = "<group>"; };
+		2A9C7600149D2CB3006D858D /* test_env_101p.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test_env_101p.pdf; sourceTree = "<group>"; };
+		2A9C7607149D3228006D858D /* test_001p.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test_001p.pdf; sourceTree = "<group>"; };
+		2A9C7608149D3228006D858D /* test_003p.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test_003p.pdf; sourceTree = "<group>"; };
+		2A9C7609149D3228006D858D /* test_120p.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test_120p.pdf; sourceTree = "<group>"; };
+		2A9C762C149D38E7006D858D /* RLOnDemandScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLOnDemandScrollView.h; sourceTree = "<group>"; };
+		2A9C762D149D38E7006D858D /* RLOnDemandScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLOnDemandScrollView.m; sourceTree = "<group>"; };
+		2AE63F2B149E54BB0007F55D /* test_venv_100p.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test_venv_100p.pdf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A9C757714991B7C006D858D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9C757F14991B7C006D858D /* UIKit.framework in Frameworks */,
+				2A9C758114991B7C006D858D /* Foundation.framework in Frameworks */,
+				2A9C758314991B7C006D858D /* CoreGraphics.framework in Frameworks */,
+				2A9C75D01499230B006D858D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A9C759A14991B7C006D858D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9C75A014991B7C006D858D /* SenTestingKit.framework in Frameworks */,
+				2A9C75A114991B7C006D858D /* UIKit.framework in Frameworks */,
+				2A9C75A214991B7C006D858D /* Foundation.framework in Frameworks */,
+				2A9C75D11499230B006D858D /* QuartzCore.framework in Frameworks */,
+				2A9C75D31499231F006D858D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A9C756F14991B7C006D858D = {
+			isa = PBXGroup;
+			children = (
+				2A9C758414991B7C006D858D /* RealLifePDFScrollView */,
+				2A9C75A514991B7C006D858D /* RealLifePDFScrollViewTests */,
+				2A9C757D14991B7C006D858D /* Frameworks */,
+				2A9C757B14991B7C006D858D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A9C757B14991B7C006D858D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C757A14991B7C006D858D /* RealLifePDFScrollView.app */,
+				2A9C759E14991B7C006D858D /* RealLifePDFScrollViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A9C757D14991B7C006D858D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C757E14991B7C006D858D /* UIKit.framework */,
+				2A9C758014991B7C006D858D /* Foundation.framework */,
+				2A9C75CF1499230B006D858D /* QuartzCore.framework */,
+				2A9C758214991B7C006D858D /* CoreGraphics.framework */,
+				2A9C759F14991B7C006D858D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A9C758414991B7C006D858D /* RealLifePDFScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C75FE149C0B7C006D858D /* RLGlobalUtilities.h */,
+				2A9C758D14991B7C006D858D /* RLAppDelegate.h */,
+				2A9C758E14991B7C006D858D /* RLAppDelegate.m */,
+				2A9C759014991B7C006D858D /* MainStoryboard.storyboard */,
+				2A9C75BD14991ED4006D858D /* RLMasterViewController.h */,
+				2A9C75BE14991ED4006D858D /* RLMasterViewController.m */,
+				2A9C75B614991E50006D858D /* RLPDFViewController.h */,
+				2A9C75B714991E50006D858D /* RLPDFViewController.m */,
+				2A9C75B914991E60006D858D /* Views */,
+				2A9C75C014992043006D858D /* Resources */,
+				2A9C758514991B7C006D858D /* Supporting Files */,
+			);
+			path = RealLifePDFScrollView;
+			sourceTree = "<group>";
+		};
+		2A9C758514991B7C006D858D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C758614991B7C006D858D /* RealLifePDFScrollView-Info.plist */,
+				2A9C758714991B7C006D858D /* InfoPlist.strings */,
+				2A9C758A14991B7C006D858D /* main.m */,
+				2A9C758C14991B7C006D858D /* RealLifePDFScrollView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A9C75A514991B7C006D858D /* RealLifePDFScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C75AB14991B7C006D858D /* RealLifePDFScrollViewTests.h */,
+				2A9C75AC14991B7C006D858D /* RealLifePDFScrollViewTests.m */,
+				2A9C75A614991B7C006D858D /* Supporting Files */,
+			);
+			path = RealLifePDFScrollViewTests;
+			sourceTree = "<group>";
+		};
+		2A9C75A614991B7C006D858D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C75A714991B7C006D858D /* RealLifePDFScrollViewTests-Info.plist */,
+				2A9C75A814991B7C006D858D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A9C75B914991E60006D858D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C75C7149922C8006D858D /* RLScrollingPDFView.h */,
+				2A9C75C8149922C8006D858D /* RLScrollingPDFView.m */,
+				2A9C75CB149922EE006D858D /* RLPDFPageView.h */,
+				2A9C75CC149922EF006D858D /* RLPDFPageView.m */,
+				2A9C762C149D38E7006D858D /* RLOnDemandScrollView.h */,
+				2A9C762D149D38E7006D858D /* RLOnDemandScrollView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A9C75C014992043006D858D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C7600149D2CB3006D858D /* test_env_101p.pdf */,
+				2A9C7607149D3228006D858D /* test_001p.pdf */,
+				2A9C7608149D3228006D858D /* test_003p.pdf */,
+				2A9C7609149D3228006D858D /* test_120p.pdf */,
+				2AE63F2B149E54BB0007F55D /* test_venv_100p.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A9C757914991B7C006D858D /* RealLifePDFScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A9C75B014991B7C006D858D /* Build configuration list for PBXNativeTarget "RealLifePDFScrollView" */;
+			buildPhases = (
+				2A9C757614991B7C006D858D /* Sources */,
+				2A9C757714991B7C006D858D /* Frameworks */,
+				2A9C757814991B7C006D858D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealLifePDFScrollView;
+			productName = RealLifePDFScrollView;
+			productReference = 2A9C757A14991B7C006D858D /* RealLifePDFScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A9C759D14991B7C006D858D /* RealLifePDFScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A9C75B314991B7C006D858D /* Build configuration list for PBXNativeTarget "RealLifePDFScrollViewTests" */;
+			buildPhases = (
+				2A9C759914991B7C006D858D /* Sources */,
+				2A9C759A14991B7C006D858D /* Frameworks */,
+				2A9C759B14991B7C006D858D /* Resources */,
+				2A9C759C14991B7C006D858D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A9C75A414991B7C006D858D /* PBXTargetDependency */,
+			);
+			name = RealLifePDFScrollViewTests;
+			productName = RealLifePDFScrollViewTests;
+			productReference = 2A9C759E14991B7C006D858D /* RealLifePDFScrollViewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A9C757114991B7C006D858D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 2A9C757414991B7C006D858D /* Build configuration list for PBXProject "RealLifePDFScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2A9C756F14991B7C006D858D;
+			productRefGroup = 2A9C757B14991B7C006D858D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A9C757914991B7C006D858D /* RealLifePDFScrollView */,
+				2A9C759D14991B7C006D858D /* RealLifePDFScrollViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A9C757814991B7C006D858D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9C758914991B7C006D858D /* InfoPlist.strings in Resources */,
+				2A9C759214991B7C006D858D /* MainStoryboard.storyboard in Resources */,
+				2A9C7601149D2CB3006D858D /* test_env_101p.pdf in Resources */,
+				2A9C760A149D3228006D858D /* test_001p.pdf in Resources */,
+				2A9C760C149D3228006D858D /* test_003p.pdf in Resources */,
+				2A9C760E149D3228006D858D /* test_120p.pdf in Resources */,
+				2AE63F2C149E54BB0007F55D /* test_venv_100p.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A9C759B14991B7C006D858D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9C75AA14991B7C006D858D /* InfoPlist.strings in Resources */,
+				2A9C7602149D2CB3006D858D /* test_env_101p.pdf in Resources */,
+				2A9C760B149D3228006D858D /* test_001p.pdf in Resources */,
+				2A9C760D149D3228006D858D /* test_003p.pdf in Resources */,
+				2A9C760F149D3228006D858D /* test_120p.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A9C759C14991B7C006D858D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A9C757614991B7C006D858D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9C758B14991B7C006D858D /* main.m in Sources */,
+				2A9C758F14991B7C006D858D /* RLAppDelegate.m in Sources */,
+				2A9C75B814991E50006D858D /* RLPDFViewController.m in Sources */,
+				2A9C75BF14991ED4006D858D /* RLMasterViewController.m in Sources */,
+				2A9C75C9149922C8006D858D /* RLScrollingPDFView.m in Sources */,
+				2A9C75CD149922EF006D858D /* RLPDFPageView.m in Sources */,
+				2A9C762E149D38E8006D858D /* RLOnDemandScrollView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A9C759914991B7C006D858D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9C75AD14991B7C006D858D /* RealLifePDFScrollViewTests.m in Sources */,
+				2A9C75CA149922C8006D858D /* RLScrollingPDFView.m in Sources */,
+				2A9C75CE149922EF006D858D /* RLPDFPageView.m in Sources */,
+				2A9C762F149D38E8006D858D /* RLOnDemandScrollView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A9C75A414991B7C006D858D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A9C757914991B7C006D858D /* RealLifePDFScrollView */;
+			targetProxy = 2A9C75A314991B7C006D858D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A9C758714991B7C006D858D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A9C758814991B7C006D858D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A9C759014991B7C006D858D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A9C759114991B7C006D858D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		2A9C75A814991B7C006D858D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A9C75A914991B7C006D858D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A9C75AE14991B7C006D858D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A9C75AF14991B7C006D858D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A9C75B114991B7C006D858D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RealLifePDFScrollView/RealLifePDFScrollView-Prefix.pch";
+				INFOPLIST_FILE = "RealLifePDFScrollView/RealLifePDFScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2A9C75B214991B7C006D858D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RealLifePDFScrollView/RealLifePDFScrollView-Prefix.pch";
+				INFOPLIST_FILE = "RealLifePDFScrollView/RealLifePDFScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2A9C75B414991B7C006D858D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealLifePDFScrollView.app/RealLifePDFScrollView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RealLifePDFScrollView/RealLifePDFScrollView-Prefix.pch";
+				INFOPLIST_FILE = "RealLifePDFScrollViewTests/RealLifePDFScrollViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2A9C75B514991B7C006D858D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealLifePDFScrollView.app/RealLifePDFScrollView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RealLifePDFScrollView/RealLifePDFScrollView-Prefix.pch";
+				INFOPLIST_FILE = "RealLifePDFScrollViewTests/RealLifePDFScrollViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A9C757414991B7C006D858D /* Build configuration list for PBXProject "RealLifePDFScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A9C75AE14991B7C006D858D /* Debug */,
+				2A9C75AF14991B7C006D858D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A9C75B014991B7C006D858D /* Build configuration list for PBXNativeTarget "RealLifePDFScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A9C75B114991B7C006D858D /* Debug */,
+				2A9C75B214991B7C006D858D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A9C75B314991B7C006D858D /* Build configuration list for PBXNativeTarget "RealLifePDFScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A9C75B414991B7C006D858D /* Debug */,
+				2A9C75B514991B7C006D858D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A9C757114991B7C006D858D /* Project object */;
+}
