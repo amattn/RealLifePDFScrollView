@@ -98,6 +98,7 @@
 		
 		// use the smaller of the two ratios
 		CGFloat ratio = MIN(widthRatio, heightRatio);
+		pdfTransform = CGAffineTransformTranslate(pdfTransform, -1 * pdfBoxRectPDFCoordinates.origin.x, -1 * pdfBoxRectPDFCoordinates.origin.y);
 		pdfTransform = CGAffineTransformScale(pdfTransform, ratio, ratio);
 	}
 	else
